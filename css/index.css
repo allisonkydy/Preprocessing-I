@@ -145,7 +145,8 @@ p,
 ul,
 a,
 h2,
-h3 {
+h3,
+input[type=submit] {
   font-size: 1.6rem;
   color: white;
   font-family: 'Rajdhani', sans-serif;
@@ -235,6 +236,36 @@ header nav a {
   padding: 2%;
   margin-bottom: 8%;
 }
+.contact {
+  margin-bottom: 8%;
+}
+.contact hr {
+  width: 35%;
+  margin-bottom: 1.5%;
+}
 .contact form {
   text-align: center;
+}
+.contact form p {
+  margin-bottom: 1.5%;
+}
+.contact form input[type=text],
+.contact form input[type=email] {
+  width: 20%;
+  font-family: 'Rajdhani', sans-serif;
+  padding-left: 0.5%;
+}
+.contact form input[type=text] {
+  margin-right: 4.5%;
+}
+.contact form textarea {
+  width: 45%;
+  font-family: 'Rajdhani', sans-serif;
+  padding: 0.5% 0 0 0.5%;
+}
+.contact form input[type=submit] {
+  background: none;
+  border: 2px solid white;
+  padding: 0.5% 3%;
+  letter-spacing: 0.4rem;
 }
