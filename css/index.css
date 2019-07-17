@@ -219,6 +219,16 @@ header nav a {
   margin-bottom: 1rem;
   letter-spacing: 0.4rem;
 }
+.main-content hr {
+  width: 75%;
+  margin-bottom: 2rem;
+}
+.main-content p {
+  border: 2px solid white;
+  box-shadow: white -0.5rem 0.5rem;
+  padding: 2%;
+  margin-bottom: 8%;
+}
 .main-content .intro {
   width: 30%;
 }
@@ -260,16 +270,6 @@ header nav a {
   .main-content .work-history {
     width: 100%;
   }
-}
-.main-content hr {
-  width: 75%;
-  margin-bottom: 2rem;
-}
-.main-content p {
-  border: 2px solid white;
-  box-shadow: white -0.5rem 0.5rem;
-  padding: 2%;
-  margin-bottom: 8%;
 }
 footer {
   margin-bottom: 8%;
