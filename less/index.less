@@ -92,6 +92,7 @@ h3 {
 	font-size: 2.4rem;
 	text-align: center;
 	margin-bottom: 1rem;
+	letter-spacing: 0.4rem;
 }
 
 .container {
@@ -138,7 +139,7 @@ header {
 
 .main-content {
 	width: 98%;
-	margin: 4% auto 3%;
+	margin: 4rem auto 3rem;
 	display: flex;
 	justify-content: space-between;
 
@@ -147,24 +148,38 @@ header {
 	}
 	
 	.skills {
-		width: @col-width;
-		
+		width: @col-width;	
 
 		ul {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			justify-content: space-evenly;
+			
 		}
 
 		li {
 			width: 40%;
 			text-align: center;
 			font-size: 2rem;
+			padding: 1.5% 0;
+			border: 2px solid @font-color;
+			box-shadow: @font-color -0.5rem 0.5rem;
+			margin-bottom: 10%;
+
+			&:first-child{
+				margin-top: 3%;
+			}
 		}
 	}
 	
 	.work-history {
 		width: @col-width;
+	}
+
+	hr {
+		width: 75%;
+		margin-bottom: 2rem;
 	}
 }// end main content
 
