@@ -96,9 +96,15 @@ h3 {
 	letter-spacing: 0.4rem;
 }
 
+// Specific Styles
+
 .container {
-	width: 70vw;
+	width: 70%;
 	margin: 0 auto;
+
+	@media (max-width: 500px) {
+		width: 92%;
+	}
 }
 
 header {
@@ -123,6 +129,10 @@ header {
 
 	hr {
 		width: 85%;
+
+		@media (max-width: 500px) {
+			width: 75%;
+		}
 	}
 
 	nav {
@@ -144,12 +154,25 @@ header {
 	display: flex;
 	justify-content: space-between;
 
+	@media (max-width: 500px) {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
 	.intro {
 		width: @col-width;	
+
+		@media (max-width: 500px) {
+			width: 100%;
+		}
 	}
 	
 	.skills {
 		width: @col-width;	
+
+		@media (max-width: 500px) {
+			width: 100%;
+		}
 
 		ul {
 			display: flex;
@@ -176,6 +199,9 @@ header {
 	.work-history {
 		width: @col-width;
 
+		@media (max-width: 500px) {
+			width: 100%;
+		}
 	}
 
 	hr {
@@ -191,12 +217,17 @@ header {
 }// end main content
 
 
-.contact {
+footer {
 	margin-bottom: 8%;
 
 	hr {
 		width: 35%;
 		margin-bottom: 1.5%;
+
+		@media (max-width: 500px) {
+			width: 75%;
+			margin-bottom: 2rem;
+		}
 	}
 
 	form {
@@ -210,6 +241,10 @@ header {
 			width: 20%;
 			font-family: @body-font;
 			padding-left: 0.5%;
+
+			@media (max-width: 500px) {
+				width: 37%;
+			}
 		}
 
 		input[type=text] {
@@ -220,6 +255,10 @@ header {
 			width: 45%;
 			font-family: @body-font;
 			padding: 0.5% 0 0 0.5%;
+
+			@media (max-width: 500px) {
+				width: 80%;
+			}
 		}
 
 		input[type=submit] {
@@ -230,8 +269,4 @@ header {
 		}
 		
 	}
-}
-
-footer {
-	
 }

@@ -159,8 +159,13 @@ h3 {
   letter-spacing: 0.4rem;
 }
 .container {
-  width: 70vw;
+  width: 70%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 92%;
+  }
 }
 header {
   margin: 2.6rem 0 2rem;
@@ -183,6 +188,11 @@ header h2 {
 header hr {
   width: 85%;
 }
+@media (max-width: 500px) {
+  header hr {
+    width: 75%;
+  }
+}
 header nav {
   margin: 1% 0;
   display: flex;
@@ -199,11 +209,27 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
 .main-content .intro {
   width: 30%;
 }
+@media (max-width: 500px) {
+  .main-content .intro {
+    width: 100%;
+  }
+}
 .main-content .skills {
   width: 30%;
+}
+@media (max-width: 500px) {
+  .main-content .skills {
+    width: 100%;
+  }
 }
 .main-content .skills ul {
   display: flex;
@@ -226,6 +252,11 @@ header nav a {
 .main-content .work-history {
   width: 30%;
 }
+@media (max-width: 500px) {
+  .main-content .work-history {
+    width: 100%;
+  }
+}
 .main-content hr {
   width: 75%;
   margin-bottom: 2rem;
@@ -236,34 +267,51 @@ header nav a {
   padding: 2%;
   margin-bottom: 8%;
 }
-.contact {
+footer {
   margin-bottom: 8%;
 }
-.contact hr {
+footer hr {
   width: 35%;
   margin-bottom: 1.5%;
 }
-.contact form {
+@media (max-width: 500px) {
+  footer hr {
+    width: 75%;
+    margin-bottom: 2rem;
+  }
+}
+footer form {
   text-align: center;
 }
-.contact form p {
+footer form p {
   margin-bottom: 1.5%;
 }
-.contact form input[type=text],
-.contact form input[type=email] {
+footer form input[type=text],
+footer form input[type=email] {
   width: 20%;
   font-family: 'Rajdhani', sans-serif;
   padding-left: 0.5%;
 }
-.contact form input[type=text] {
+@media (max-width: 500px) {
+  footer form input[type=text],
+  footer form input[type=email] {
+    width: 37%;
+  }
+}
+footer form input[type=text] {
   margin-right: 4.5%;
 }
-.contact form textarea {
+footer form textarea {
   width: 45%;
   font-family: 'Rajdhani', sans-serif;
   padding: 0.5% 0 0 0.5%;
 }
-.contact form input[type=submit] {
+@media (max-width: 500px) {
+  footer form textarea {
+    width: 80%;
+  }
+}
+footer form input[type=submit] {
   background: none;
   border: 2px solid white;
   padding: 0.5% 3%;
