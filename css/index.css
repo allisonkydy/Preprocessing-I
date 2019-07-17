@@ -141,12 +141,26 @@ body {
   background: linear-gradient(to bottom, #162142 0%, #ec613b 100%);
   background-attachment: fixed;
 }
-p {
+p,
+ul,
+a,
+h2,
+h3 {
   font-size: 1.6rem;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+}
+h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 .container {
-  width: 75%;
+  width: 70vw;
   margin: 0 auto;
+}
+header {
+  margin: 2.6rem 0 2rem;
 }
 header h1 {
   font-family: 'Maven Pro', sans-serif;
@@ -156,8 +170,54 @@ header h1 {
   letter-spacing: 1rem;
   text-align: center;
 }
+header h2 {
+  padding-top: 1%;
+  padding-bottom: 2%;
+  font-size: 2.1rem;
+  letter-spacing: 1.3rem;
+  text-align: center;
+}
+header hr {
+  width: 85%;
+}
+header nav {
+  margin: 1% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 header nav a {
-  font-size: 1.6rem;
-  color: white;
+  font-size: 1.8rem;
   text-decoration: none;
+}
+.main-content {
+  width: 98%;
+  margin: 4% auto 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .intro {
+  width: 30%;
+}
+.main-content .skills {
+  width: 30%;
+}
+.main-content .skills ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content .skills li {
+  width: 40%;
+  text-align: center;
+  font-size: 2rem;
+}
+.main-content .work-history {
+  width: 30%;
+}
+.contact {
+  padding-top: 200px;
+}
+.contact form {
+  text-align: center;
 }

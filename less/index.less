@@ -57,6 +57,20 @@ html, body {
     height: 100%;
 }
 
+// Variables
+
+@font-color:white;
+@name-font: 'Maven Pro', sans-serif;
+@body-font: 'Rajdhani', sans-serif;
+@col-width: 30%;
+
+// Mixins
+
+.flex-center() {
+	display: flex;
+	align-items: center;
+}
+
 // General Styles
 
 html {
@@ -68,24 +82,28 @@ body {
 	background-attachment: fixed;
 }
 
-p {
+p, ul, a, h2, h3 {
 	font-size: 1.6rem;
+	color: @font-color;
+	font-family: 'Rajdhani', sans-serif;
 }
 
-// Variables
-
-@font-color:white;
-
+h3 {
+	font-size: 2.4rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
 
 .container {
-	width: 75%;
+	width: 70vw;
 	margin: 0 auto;
 }
 
 header {
+	margin: 2.6rem 0 2rem;
 
 	h1 {
-		font-family: 'Maven Pro', sans-serif;
+		font-family: @name-font;
 		font-weight: 900;
 		font-size: 7rem;
 		color: @font-color;
@@ -93,31 +111,70 @@ header {
 		text-align: center;
 	}
 
+	h2 {
+		padding-top: 1%;
+		padding-bottom: 2%;
+		font-size: 2.1rem;
+		letter-spacing: 1.3rem;
+		text-align: center;
+	}
+
+	hr {
+		width: 85%;
+	}
+
 	nav {
+		margin: 1% 0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
 
 		a {
-			font-size: 1.6rem;
-			color: @font-color;
+			font-size: 1.8rem;
 			text-decoration: none;
 		}
 	}
 }
 
-.intro {
+.main-content {
+	width: 98%;
+	margin: 4% auto 3%;
+	display: flex;
+	justify-content: space-between;
 
+	.intro {
+		width: @col-width;	
+	}
 	
-}
+	.skills {
+		width: @col-width;
+		
 
-.skills {
+		ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 
-}
+		li {
+			width: 40%;
+			text-align: center;
+			font-size: 2rem;
+		}
+	}
+	
+	.work-history {
+		width: @col-width;
+	}
+}// end main content
 
-.work-history {
-
-}
 
 .contact {
+	padding-top: 200px;
 
+	form {
+		text-align: center;
+	}
 }
 
 footer {
