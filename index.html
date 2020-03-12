@@ -3,17 +3,73 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>My Resume</title>
+  <title>Allison Donnelly's Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:900|Rajdhani&display=swap" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+      <h1>Allison Donnelly</h1>
+      <h2>full stack web developer</h2>
+      <hr>
+      <nav>
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">portfolio</a>
+        <a href="#">contact</a>
+      </nav>
+      <hr>
+    </header>
+    <div class="main-content">
+      <section class="intro">
+        <h3>Hi there!</h3>
+        <hr>
+        <p>I'm a passionate, dedicated, team-oriented web developer who's ready to bring your project to the next level. I have a track record of successful projects and a great depth of experience. Take a look at my portfolio to find out more. If you want to get in touch, contact me using the form below.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse mollitia sapiente culpa unde facilis optio nesciunt, aspernatur earum quos cupiditate tenetur? Neque esse perspiciatis similique illo modi, aspernatur id!</p>
+      </section>
+      <section class="skills">
+        <h3>Skills</h3>
+        <hr>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Command Line</li>
+          <li>Responsive Design</li>
+        </ul>
+      </section>
+      <section class="work-history">
+        <h3>Work History</h3>
+        <hr>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt voluptas aspernatur magni sunt consectetur amet provident asperiores aut aliquid architecto, sed dolores quam labore eius aperiam. Nesciunt, ea enim?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, vero iste. Beatae omnis architecto dolorum distinctio similique mollitia. Voluptatem ut cupiditate maxime culpa amet consequuntur fuga eum natus tempore iure?</p>
+      </section>
+    </div>
+    <footer>
+        <h3>Contact</h3>
+        <hr>
+        <form action="#" id="contact-form">
+          <div>
+            <input required type="text" placeholder="name">
+            <input required type="email" placeholder="email">
+          </div>
+          <div>
+              <textarea required name="contact-msg" id="contact-form" cols="30" rows="5" placeholder="enter a message here..."></textarea>
+          </div>
+          <div>
+            <input type="submit" value="submit">
+          </div>
+        </form>
+    </footer>
+  </div>
+  
 </body>
 </html>
